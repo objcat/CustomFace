@@ -35,6 +35,25 @@
     return _faceArray;
 }
 
++ (void)insertFaceToString:(FaceAttachment *)model textView:(UITextView *)textView {
+    
+    //创建一个附件
+    FaceAttachment *faceAttachement = [[FaceAttachment alloc]init];
+    //添加表情
+    faceAttachement.imageName = model.imageName;
+    //添加标签名
+    faceAttachement.tagName = model.tagName;
+    
+    //设置表情大小
+    faceAttachement.bounds = CGRectMake(0, 0, 18, 18);
+    //记录光标位置
+    NSInteger location = textView.selectedRange.location;
+    //插入表情
+    [textView.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:faceAttachement] atIndex:textView.selectedRange.location];
+    //将光标位置向前移动一个单位
+    textView.selectedRange = NSMakeRange(location + 1, 0);
+}
+
 
 - (NSAttributedString *)faceWithServerString:(NSString *)string {
     

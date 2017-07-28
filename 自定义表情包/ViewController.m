@@ -50,11 +50,11 @@
     
     NSLog(@"传到服务器:%@", serverString);
     
-    //从服务器纯文本转换回来的富文本
-    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
+//    //从服务器纯文本转换回来的表情富文本
+//    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
     
     //显示富文本
-    self.textView2.attributedText = converString;
+    self.textView2.text = serverString;
     
 }
 
@@ -66,11 +66,11 @@
     
     NSLog(@"传到服务器:%@", serverString);
     
-    //从服务器纯文本转换回来的富文本
-    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
-    
-    //显示富文本
-    self.textView2.attributedText = converString;
+//    //从服务器纯文本转换回来的表情富文本
+//    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
+//    
+//    //显示富文本
+    self.textView2.text = serverString;
 }
 
 
