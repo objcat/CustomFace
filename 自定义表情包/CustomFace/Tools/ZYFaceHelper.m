@@ -43,7 +43,6 @@
     faceAttachement.imageName = model.imageName;
     //添加标签名
     faceAttachement.tagName = model.tagName;
-    
     //设置表情大小
     faceAttachement.bounds = CGRectMake(0, 0, 18, 18);
     //记录光标位置
