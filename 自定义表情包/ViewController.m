@@ -33,29 +33,25 @@
     self.textView2.layer.borderWidth = 0.5;
     self.textView2.delegate = self;
     self.textView2.editable = NO;
-
+    
     self.faceBoard = [[ZYFaceBoard alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 250) textView:self.textView];
     self.faceBoard.backgroundColor = [UIColor redColor];
     self.faceBoard.delegate = self;
-
+    
 }
 
 /** 下面输出的文字可用于上传服务器 */
 
 //文字变化
 - (void)textViewDidChange:(UITextView *)textView {
-    
+
     //这个字符串可上传服务器
     NSString *serverString = [textView.attributedText toString];
-    
-    NSLog(@"传到服务器:%@", serverString);
-    
-//    //从服务器纯文本转换回来的表情富文本
-//    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
-    
-    //显示富文本
+    //表情纯文本
     self.textView2.text = serverString;
-    
+    NSLog(@"传到服务器:%@", serverString);
+    //    //从服务器纯文本转换回来的表情富文本
+    //    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
 }
 
 //表情变化
@@ -63,14 +59,9 @@
     
     //这个字符串可上传服务器
     NSString *serverString = [self.textView.attributedText toString];
-    
-    NSLog(@"传到服务器:%@", serverString);
-    
-//    //从服务器纯文本转换回来的表情富文本
-//    NSAttributedString *converString = [[ZYFaceHelper new] faceWithServerString:serverString];
-//    
-//    //显示富文本
+    //表情纯文本
     self.textView2.text = serverString;
+    NSLog(@"传到服务器:%@", serverString);
 }
 
 
@@ -98,7 +89,6 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

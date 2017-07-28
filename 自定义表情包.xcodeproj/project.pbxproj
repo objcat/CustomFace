@@ -177,18 +177,10 @@
 		A10859DF1E5D207600AB55BA /* 自定义表情包 */ = {
 			isa = PBXGroup;
 			children = (
-				A1D953281E5FFE6E00D92323 /* CustomFace */,
-				A1085A061E5D2BEA00AB55BA /* face */,
-				A10859FE1E5D249400AB55BA /* 键盘.png */,
-				A10859FC1E5D23FE00AB55BA /* 表情.png */,
-				A10859E31E5D207600AB55BA /* AppDelegate.h */,
-				A10859E41E5D207600AB55BA /* AppDelegate.m */,
 				A10859E61E5D207600AB55BA /* ViewController.h */,
 				A10859E71E5D207600AB55BA /* ViewController.m */,
-				A10859E91E5D207600AB55BA /* Main.storyboard */,
-				A10859EC1E5D207600AB55BA /* Assets.xcassets */,
-				A10859EE1E5D207600AB55BA /* LaunchScreen.storyboard */,
-				A10859F11E5D207600AB55BA /* Info.plist */,
+				A1D953281E5FFE6E00D92323 /* CustomFace */,
+				A1085A061E5D2BEA00AB55BA /* face */,
 				A10859E01E5D207600AB55BA /* Supporting Files */,
 			);
 			path = "自定义表情包";
@@ -197,6 +189,14 @@
 		A10859E01E5D207600AB55BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A10859FE1E5D249400AB55BA /* 键盘.png */,
+				A10859FC1E5D23FE00AB55BA /* 表情.png */,
+				A10859E31E5D207600AB55BA /* AppDelegate.h */,
+				A10859E41E5D207600AB55BA /* AppDelegate.m */,
+				A10859E91E5D207600AB55BA /* Main.storyboard */,
+				A10859EC1E5D207600AB55BA /* Assets.xcassets */,
+				A10859EE1E5D207600AB55BA /* LaunchScreen.storyboard */,
+				A10859F11E5D207600AB55BA /* Info.plist */,
 				A10859E11E5D207600AB55BA /* main.m */,
 			);
 			name = "Supporting Files";
